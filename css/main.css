@@ -1,0 +1,520 @@
+@import url( http://fonts.googleapis.com/earlyaccess/notosanskr.css );
+.notosanskr * { font-family: 'Noto Sans KR', sans-serif; }
+
+@import url(https://fonts.googleapis.com/css?family=Gothic+A1:900);
+
+* {margin: 0; padding: 0;}
+li { list-style: none;}
+a {
+    text-decoration: none; color: #222; display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h3{
+    font-family: 'Gothic A1' ;
+}
+header, section, footer {
+    width: 100%; 
+    float: left;
+}
+/* 모든 영역 box-sizing 설정 */
+header, section, footer, div {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+img {width: 100%;}
+
+.center_box {
+    width: 1300px;
+    margin: 0 auto;
+}
+body {
+    background-color: antiquewhite;
+}
+header {
+    height: 130px;
+}
+/* 로그인 ,회원가입 ... */
+header .up_area {
+    width: 100%;
+    height: 40px;
+    background-color: #e76500;
+}
+header .up_area .right_menu {
+    float: right;
+}
+
+header .up_area .right_menu ul li {
+    float: left;
+    margin: 0px 10px;
+}
+header .up_area .right_menu ul li a{
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+header .up_area .right_menu ul li:last-child{
+    background-color: #e23925;
+    border-radius: 10px;
+}
+header .up_area .right_menu ul li a:hover {
+    color: #222222;
+} 
+/* 로그인 ,회원가입 ... */
+
+/* 로고 */
+header .down_area .logo {
+    width: 130px;
+    height: 8 0px;
+    float: left;
+    margin-left: 130px;
+}
+/* 내비게이션 메뉴 */
+header .down_area nav {
+    float: right;
+    z-index: 11;
+    margin-right: 90px;
+    position: relative;
+}
+header .down_area nav > ul > li {
+    float: left;
+    padding: 20px 0;
+}
+header .down_area nav > ul > li > a {
+    margin-right: 50px;
+    padding: 10px 0;    
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+header .down_area nav > ul > li > a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #e23925;  
+    left: 50%;
+    bottom: 15px;
+    transition: all 0.5s;
+}
+header .down_area nav > ul > li > a:hover:after {
+    width: 100%;
+    left: 0;
+}
+/* 서브메뉴 */
+header .down_area nav .sub {
+    /* display: none;  */
+    background-color: white;
+    border-top: 3px solid #ffcc00;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;  
+    transition: all 0.5s;
+}
+header .down_area nav .sub li a {
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+header .down_area nav .sub li a:hover {
+    background-color: #efefef;
+}
+header .down_area nav > ul > li:hover .sub  {
+    /* display: block; */
+    opacity: 1;
+    height: auto; /* height: 100%; */
+}
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* visual 영역 */
+section#visual { /* section #visual = x 틀린문자 */
+    padding: 0;
+    position: relative;
+    z-index: 10;
+    margin-top: 0px;
+}
+section#visual .owl-carousel{
+    width: 1900px;
+    margin: 0 auto;
+}
+section#visual .owl-carousel .owl-item{
+    height: 100%;
+}
+section#visual .owl-theme .owl-nav{
+    display: none;
+}
+section#visual .owl-theme .owl-dots, .owl-theme .owl-nav{
+    position: relative;
+    top: -25px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    color: #e76500;
+}
+
+
+
+/* ***banner 영역*** */
+section#banner .movie {
+    width: 670px;
+    height: 380px;
+    float: left;
+    margin-right: 50px;
+    background-color: #e23925;
+}
+section#banner .banner_right{
+    width: 580px;
+    height: 380px;
+    float: left;
+}
+section#banner .banner_right ul li {
+    width: 280px;
+    height: 180px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    /* position: relative; */
+}
+/* 1번 */
+section#banner .banner_right ul li:nth-child(1) {
+    background-image: url(../img/scooter.png);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/* section#banner .banner_right ul li:nth-child(1) .pic img{
+    width: 115px;
+    height: 74px;
+    float: left;
+} */
+/* 2번 */
+section#banner .banner_right ul li:nth-child(2) {
+    background-image: url(../img/float.png);
+}
+/* 부속 */
+section#banner .banner_right .coco p{
+    color: #eee;
+}
+section#banner .banner_right .coco span {
+    color: #e23925;
+    font-weight: bold;
+}
+section#banner .banner_right .coco h3 {
+    color: #eee;
+}
+/* 3번 */
+section#banner .banner_right ul li:nth-child(3) {
+    background-image: url(../img/wa-orig.png);  
+    background-color:rgb(159, 113, 56);
+    background-size:60%;
+    background-position: bottom;
+    margin-right: 20px;  
+    
+}
+/* 4번 */
+section#banner .banner_right ul li:nth-child(4) {
+    background-image: url(../img/crown-back.png);
+    /* background: linear-gradient(rgb(163, 190, 221), rgb(0, 102, 255)); */
+}
+/* section#banner .banner_right ul li:nth-child(4) .pic img{
+    width: 121px;
+    height: 63px;
+} */
+
+
+/* 십자 그림 */
+section#banner .banner_right ul li .des img {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+    margin-top: 40px;
+}
+section#banner .banner_right ul li #ad img {
+    width: 42px;
+    height: 42px;
+    margin: 17px 0px;
+    margin-left: 20px;
+}
+/* section#banner .banner_right ul li .bg {
+    position: absolute; /* bg와 des와 겹침
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+} */
+section#banner .banner_right ul li .des {
+    /* position: absolute; */
+    color: #222;
+    box-sizing: border-box;
+}
+section#banner .banner_right ul li .des h3 {    
+    font-size: 25px;
+    margin: 15px 0px;
+    text-align: center;
+}
+section#banner .banner_right ul li .des p {
+    text-align: center;
+}
+
+/* ***리스트 영역*** */
+section#list {
+    background-image: url(../img/mibble-back.png);
+    /* 배경이미지 고정시킴 */
+    /* background-attachment: fixed; */
+    padding: 20px 0px;
+}
+section#list .center_box > h3 {
+    padding-top: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-image:url(../img/white-logo.png) ;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position-x: 27%;
+}
+section#list .list_box ul{
+    /* 오버플로우 */
+    padding-top: 50px;
+}
+section#list .list_box ul li{
+    float: left;
+    margin-right: 50px;
+    width: 215px;
+}
+section#list .list_box ul li h3 {
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #390400;
+    color: #e23925;
+    margin-top: 20px;
+}
+section#list .list_box ul li:last-child {
+    margin-right: 0;
+}
+section#list .list_box ul li .photo {
+    width: 215px;
+    height: 215px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+/* photo안의 이미지 조금 커지는 애니매이션 */
+section#list .list_box ul li .photo img {
+    transform: scale(1,1);
+    transition: all 0.5s;    
+    /* margin-top: 20px; */
+}
+section#list .list_box ul li:hover .photo img {
+    transform: scale(1.1,1.1);
+}
+
+/* **이벤트 영역** */
+
+section#event .e_left {
+    width: 829px;
+    height: 580px;
+    float: left;
+    margin-right: 27px;
+    background-color: #008c00;
+}  
+section#event .e_right {
+    width: 444px;
+    float: left;
+    
+}
+section#event .e_right .event1 a {
+    width: 444px;
+    float: left;    
+    margin-bottom: 22px;
+}
+section#event .e_right .event2 a {
+    width: 444px;
+    float: left;  
+}
+
+
+/* **노티스 영역** */
+
+/* 큰 바탕 크기 */
+
+section#notice .tep {
+    width: 630px;
+    height: 310px;
+}
+
+/* 백그라운드 컬러 설정 */
+section#notice .left_tip {
+    float: left;
+    background-color: #cee0dc;
+    background-size: 630px 215px;
+    background-position: bottom;
+    background-image: linear-gradient( to bottom , #cee0dc , white);
+    margin-right: 40px;
+}
+section#notice .right_tip {
+    float: left;
+    background-color: #fcd28c;
+    background-size: 630px 215px;
+    background-position: bottom;
+    background-image: linear-gradient( to bottom , #fcd28c , white);
+}
+
+/* 글자 설정 */
+/* 왼쪽 메뉴 */
+
+section#notice .tep .headline h3 a {
+    float: left;
+    margin: 30px;
+    color: #111;
+    font-family: "Gothic A1";
+    font-weight: bold;
+    border: none;
+    font-size: 30px;
+}
+section#notice .tep h1 {
+    float: left;
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0px;
+    margin-left: 10px;
+}
+section#notice .left_tip .bord ul li{
+    width: 90%;
+    float: left;
+    margin-left: 20px;
+    border-bottom: 1px solid rgba(150,150,150,0.9);
+}
+/* 오른쪽 메뉴 */
+section#notice .right_tip .job {
+    width: 410px;
+    padding: 25px;
+    float: left;
+}
+section#notice .right_tip .job h3 {
+    font-size: 25px;
+}
+section#notice .right_tip .job span {
+    color: #ff331c;
+}
+section#notice .right_tip .job p {
+    font-size: 18px;
+    font-weight: bold;
+    width: 65%;
+    color: #555;
+    border-bottom: 1px solid rgba(150,150,150,0.9);
+    margin-top: 20px; 
+}
+section#notice .right_tip .job p:hover {
+    color: #e23925;
+    font-style: italic;
+}
+section#notice .right_tip .bord h3 {
+    font-size: 30px;   
+     /* 글씨가 넘칠때 막아주는 명령어  */
+    white-space : nowrap;
+}
+/* hr 가로선 */
+section#notice hr {
+    width: 90%;
+    margin-left: 20px;
+    border: none;
+    color: rgba(150,150,150,0.9); 
+    border-top: 1px solid;
+    /* background-color: rgba(150, 150, 150, 0.9);
+    height: 1px; */
+}
+/* 사각 십자 설정 */
+section#notice .tep .headline  a  img {
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    width: 42px;
+}
+/* 화살표 설정 */
+section#notice .left_tip .bord span img{
+    float: right;
+    width: 28px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+/* 햄버거 이미지 */
+section#notice .right_tip .bord .burger {
+    width: 100px;
+    float: right;
+    margin: 10px;
+    margin-right: 30px;
+}
+section#notice .right_tip .bord img {
+    width: 90%;
+}
+
+
+/* ***푸터 영역*** */
+footer {
+    height: 150px;
+    margin-top: 40px;
+    background-color: #222;
+}
+/* **텍스트** */
+footer .footer_menu {
+    float: left;
+    margin-top: 40px;
+    margin-left: 15px;  
+}
+footer .footer_menu ul li {     
+    float: left;
+    border-right: 1px solid #999;    
+    margin-right:15px; 
+}
+/* '관리자' 오른쪽 선 없앰 */
+footer .footer_menu ul li:last-child{
+    border: none;
+}
+footer .footer_menu .up_menu a {
+    color: #999;
+    font-size: 14px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+footer .footer_menu .down_menu {
+    color: #999;
+    float: left;
+    font-size: 10px;
+    margin-top: 10px;
+}
+/* **이미지** */
+footer .logobh {
+    width: 162px;
+    height: 102px;
+    float: left;
+    margin-top: 20px;
+}
+footer .sns {
+    float: right;
+    margin-top: 80px;
+}
+footer .sns .community {
+    float: left;
+}
+footer .sns li {
+    width: 40px;
+    height: 40px;  
+    margin-left: 10px;
+    float: left;
+}
+
+
+
+
+
+
